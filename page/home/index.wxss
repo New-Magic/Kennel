@@ -1,0 +1,104 @@
+/**
+顶部样式
+*/
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  /* background-color: #fff; */
+}
+
+.header {
+  margin: 20rpx;
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  align-items: center;
+}
+
+.setting {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.moneyIcon {
+  width: 40rpx;
+  height: 60rpx;
+  margin-right: 10rpx;
+}
+
+.box {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.settingBox {
+  margin-right: 50rpx;
+  display: flex;
+  align-items: center;
+  width: 100rpx;
+}
+
+.textStyle {
+  font-size: 40rpx;
+}
+
+/**
+狗窝
+*/
+.middle {
+  display: flex;
+  flex: 1;
+  /* background: red; */
+  align-items: flex-end;
+}
+
+.kennel {
+  flex: 1;
+  height: 800rpx;
+  /* background: yellow; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20rpx;
+}
+
+.kennelBox {
+  width: 30%;
+  height: 300rpx;
+  background: white;
+  border: 1px solid black;
+  border-radius: 20rpx;
+  margin: 20rpx 10rpx;
+}
+
+/**
+底部样式
+*/
+.bottom {
+  display: flex;
+  margin: 40rpx;
+  align-items: flex-end;
+}
+
+.button {
+  width: 150rpx;
+  height: 80rpx;
+  background: white;
+  border: 1px solid black;
+  border-radius: 12rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin-right: 25rpx;
+}
+
+.buildButton {
+  width: 150rpx;
+  height: 200rpx;
+  border: 1px solid black;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 200rpx;
+}
+

@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wx1ff71c919527db42",
-	"projectname": "%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE",
+	"appid": "wx18ec1e8c92e4c616",
+	"projectname": "Kennel",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

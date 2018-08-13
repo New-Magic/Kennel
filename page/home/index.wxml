@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="header">
+    <view class="settingBox">
+      <image class="setting" src="resources/u24.png" />
+    </view>
+    <view class="box">
+      <image class="moneyIcon" src="resources/u19.png"/>
+      <view class="textStyle">{{money}}金币</view>
+    </view>
+    <view class="box">
+      <image class="moneyIcon" src="resources/u19.png"/>
+      <view class="textStyle">{{time}}/秒</view>
+    </view>
+  </view>
+  <view class="middle">
+    <view class="kennel">
+      <view class="kennelBox">
+      </view>
+      <view class="kennelBox">
+      </view>
+      <view class="kennelBox">
+      </view>
+      <view class="kennelBox">
+      </view>
+      <view class="kennelBox">
+      </view>
+      <view class="kennelBox">
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="button">加速X2</view>
+    <view class="button">图鉴</view>
+    <view class="button">商店</view>
+    <view class="buildButton">生成狗</view>
+  </view>
+</view>
