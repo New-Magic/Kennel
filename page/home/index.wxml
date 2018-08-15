@@ -1,37 +1,56 @@
-<view class="container">
+<view class="container" style="background:url(./resources/background.png) 100%/100% no-repeat ">
   <view class="header">
     <view class="settingBox">
       <image class="setting" src="resources/u24.png" />
     </view>
     <view class="box">
-      <image class="moneyIcon" src="resources/u19.png"/>
-      <view class="textStyle">{{money}}金币</view>
+      <image class="moneyIcon" src="resources/wallet.png"/>
+      <image class="moneyCount" src="resources/9999k.png"/>
+      <!-- <view class="textStyle">{{money}}金币</view> -->
     </view>
     <view class="box">
-      <image class="moneyIcon" src="resources/u19.png"/>
-      <view class="textStyle">{{time}}/秒</view>
+      <image class="moneyIcon" src="resources/gold.png"/>
+      <image class="moneyCount" src="resources/666.png"/>
+      <!-- <view class="textStyle">{{time}}/秒</view> -->
     </view>
   </view>
   <view class="middle">
     <view class="kennel">
       <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
       </view>
       <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
       </view>
       <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
       </view>
       <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
       </view>
       <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
       </view>
       <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
       </view>
     </view>
   </view>
   <view class="bottom">
-    <view class="button">加速X2</view>
-    <view class="button">图鉴</view>
-    <view class="button">商店</view>
-    <view class="buildButton">生成狗</view>
+    <view class="button">
+      <image class="opraIcon" src="resources/double.png"/>
+      <image class="opraIcon1" src="resources/doubleFont.png"/>
+    </view>
+    <view class="button">
+      <image class="opraIcon" src="resources/dictionary.png"/>
+      <image class="opraIcon1" src="resources/dictionaryFont.png"/>
+    </view>
+    <view class="button">
+      <image class="opraIcon" src="resources/dogShop.png"/>
+      <image class="opraIcon1" src="resources/shopping.png"/>
+    </view>
+    <view class="buildButton" style="background:url(./resources/kennelShadow.png) 100%/100% no-repeat ">
+      <image class="opraIcon2" src="resources/kennel.png"/>
+    </view>
   </view>
 </view>
