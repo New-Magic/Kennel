@@ -34,6 +34,15 @@
       <view class="kennelBox">
         <image class="cushion9" src="resources/cushion.png"/>
       </view>
+      <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
+      <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
+      <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
     </view>
   </view>
   <view class="bottom">
@@ -49,8 +58,13 @@
       <image class="opraIcon" src="resources/dogShop.png"/>
       <image class="opraIcon1" src="resources/shopping.png"/>
     </view>
-    <view class="buildButton" style="background:url(./resources/kennelShadow.png) 100%/100% no-repeat ">
-      <image class="opraIcon2" src="resources/kennel.png"/>
+    <view class="upgrade">
+      <image class="upgradeIcon" src="resources/upgrade.png"/>
+    </view>
+    <view class="button">
+      <view class="buildButton" style="background:url(./resources/kennelShadow.png) 100%/100% no-repeat ">
+        <image class="opraIcon2" src="resources/kennel.png"/>
+    </view>
     </view>
   </view>
 </view>
