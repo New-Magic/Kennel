@@ -5,8 +5,8 @@
       <image class="moneyCount" src="resources/9999k.png"/>
     </view>
     <view class="box">
-      <image class="moneyIcon" src="resources/gold.png"/>
-      <image class="moneyCount" src="resources/666.png"/>
+      <image class="timeIcon" src="resources/gold.png"/>
+      <image class="timeCount" src="resources/666.png"/>
     </view>
   </view>
   <view class="process">
@@ -15,9 +15,12 @@
   <view class="middle">
     <view class="kennel">
       <view class="kennelBox">
+        <image class="headGold" src="resources/head_gold.png"/>
+        <image class="puppy" src="resources/puppy.png"/>
         <image class="cushion9" src="resources/cushion.png"/>
       </view>
       <view class="kennelBox">
+        <image class="puppy" src="resources/puppy.png"/>
         <image class="cushion9" src="resources/cushion.png"/>
       </view>
       <view class="kennelBox">
@@ -61,7 +64,7 @@
     <view class="upgrade">
       <image class="upgradeIcon" src="resources/upgrade.png"/>
     </view>
-    <view class="button">
+    <view class="house">
       <view class="buildButton" style="background:url(./resources/kennelShadow.png) 100%/100% no-repeat ">
         <image class="opraIcon2" src="resources/kennel.png"/>
     </view>
