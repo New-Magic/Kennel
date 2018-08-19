@@ -10,13 +10,21 @@
 }
 
 .header {
-  margin: 20rpx;
+  margin: 20rpx 100rpx;
   display: flex;
   flex-direction: row;
-  /* background-color: red; */
   align-items: center;
 }
-
+.process{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.processBar{
+  height:90rpx;
+  width:496rpx;
+  margin: 10rpx 30rpx;
+}
 .setting {
   width: 60rpx;
   height: 60rpx;
@@ -36,6 +44,7 @@
 .box {
   display: flex;
   flex: 1;
+  justify-content: center;
   align-items: center;
 }
 
@@ -71,11 +80,21 @@
   height: 260rpx;
   margin: 10rpx;
   display:flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.headGold {
+  height:47rpx;
+  width:48rpx;
+}
+.puppy{
+  width:128rpx;
+  height:203rpx;
 }
 .cushion9 {
   width: 100%;
-  height: 30rpx;
+  height: 20%;
   margin-bottom: 10rpx;
 }
 
