@@ -1,0 +1,101 @@
+<view class="container" style="background:url(./resources/background.png) 100%/100% no-repeat ">
+  <view class="header">
+    <view class="box">
+      <image class="moneyIcon" src="resources/wallet.png"/>
+      <image class="moneyCount" src="resources/9999k.png"/>
+    </view>
+    <view class="box">
+      <image class="timeIcon" src="resources/gold.png"/>
+      <image class="timeCount" src="resources/666.png"/>
+    </view>
+  </view>
+  <view class="process">
+    <image class="processBar" src="resources/toplevel.png" />
+  </view>
+  <view class="middle">
+     <movable-area class="kennel" style="width:{{movewidth}}rpx; height:789rpx;">
+      <view class="kennelBox">
+        <image class="headGold" src="resources/head_gold.png"/>
+        <movable-view direction="all" 
+          x="22.5"
+          y='20'
+          style="width:160rpx; height:203rpx;"
+          bindtouchstart="startEvent"
+          bindtouchmove="moveEvent"
+          bindtouchend="endEvent">
+        <image class="puppy" src="resources/puppy.png"/>
+        </movable-view>
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
+      <view class="kennelBox">
+        <image class="headGold" src="resources/head_gold.png"/>
+        <movable-view direction="all">
+          <!-- <image class="puppy" src="resources/puppy.png"/> -->
+        </movable-view >
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
+      <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
+      <view class="kennelBox">
+        <movable-view direction="all" 
+          x="22.5"
+          y='151'
+          style="width:160rpx; height:203rpx;"
+          bindtouchstart="startEvent"
+          bindtouchmove="moveEvent"
+          bindtouchend="endEvent">
+        <image class="puppy" src="resources/puppy.png"/>
+        </movable-view>
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
+      <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
+      <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
+      <view class="kennelBox">
+        <movable-view direction="all" 
+          id="7"
+          x="22.5"
+          y='282'
+          style="width:160rpx; height:203rpx;"
+          bindtouchstart="startEvent"
+          bindtouchmove="moveEvent"
+          bindtouchend="endEvent">
+        <image class="puppy" src="resources/puppy.png"/>
+        </movable-view>
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
+      <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
+      <view class="kennelBox">
+        <image class="cushion9" src="resources/cushion.png"/>
+      </view>
+    </movable-area>
+  </view>
+  <view class="bottom">
+    <view class="button">
+      <image class="opraIcon" src="resources/double.png"/>
+      <image class="opraIcon1" src="resources/doubleFont.png"/>
+    </view>
+    <view class="button">
+      <image class="opraIcon" src="resources/dictionary.png"/>
+      <image class="opraIcon1" src="resources/dictionaryFont.png"/>
+    </view>
+    <view class="button">
+      <image class="opraIcon" src="resources/dogShop.png"/>
+      <image class="opraIcon1" src="resources/shopping.png"/>
+    </view>
+    <view class="upgrade">
+      <image class="upgradeIcon" src="resources/upgrade.png"/>
+    </view>
+    <view class="house">
+      <view class="buildButton" style="background:url(./resources/kennelShadow.png) 100%/100% no-repeat ">
+        <image class="opraIcon2" src="resources/kennel.png"/>
+    </view>
+    </view>
+  </view>
+</view>

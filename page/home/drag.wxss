@@ -77,7 +77,6 @@
 .middle {
   display: flex;
   flex: 1;
-  margin-bottom: 210rpx;
 }
 
 .kennel {
@@ -94,7 +93,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  position: relative;
+  /* position: relative; */
 }
 .headGold {
   height:47rpx;
@@ -105,8 +104,7 @@
 .puppy{
   width:160rpx;
   height:203rpx;
-  position: absolute;
-  bottom: 20rpx;
+  z-index: 9999;
 }
 .cushion9 {
   width: 175rpx;
