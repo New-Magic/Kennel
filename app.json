@@ -1,5 +1,6 @@
 {
   "pages": [
+    "page/home/drag",
     "page/home/index",
     "page/component/index",
     "page/component/pages/view/view",

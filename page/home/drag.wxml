@@ -13,65 +13,25 @@
     <image class="processBar" src="resources/toplevel.png" />
   </view>
   <view class="middle">
-     <movable-area class="kennel" style="width:{{movewidth}}rpx; height:789rpx;">
-      <view class="kennelBox">
+     <movable-area class="kennel" style="width:100%; height:789rpx;" >
+      <view class="kennelBox" wx:for="{{puppyData}}" wx:key="{{item.id}}">
         <image class="headGold" src="resources/head_gold.png"/>
+        <view style="display:{{item.show}}">
         <movable-view direction="all" 
-          x="22.5"
-          y='20'
+          id="{{item.id}}"
+          x="{{45+(item.column-1)*(250)}}rpx"
+          y='{{48+(item.row-1)*(789/3)}}rpx'
           style="width:160rpx; height:203rpx;"
           bindtouchstart="startEvent"
           bindtouchmove="moveEvent"
           bindtouchend="endEvent">
-        <image class="puppy" src="resources/puppy.png"/>
+          
+            <image class="puppy" src="resources/puppy.png" />
+        <text>{{item.level}}</text>
+        
         </movable-view>
-        <image class="cushion9" src="resources/cushion.png"/>
-      </view>
-      <view class="kennelBox">
-        <image class="headGold" src="resources/head_gold.png"/>
-        <movable-view direction="all">
-          <!-- <image class="puppy" src="resources/puppy.png"/> -->
-        </movable-view >
-        <image class="cushion9" src="resources/cushion.png"/>
-      </view>
-      <view class="kennelBox">
-        <image class="cushion9" src="resources/cushion.png"/>
-      </view>
-      <view class="kennelBox">
-        <movable-view direction="all" 
-          x="22.5"
-          y='151'
-          style="width:160rpx; height:203rpx;"
-          bindtouchstart="startEvent"
-          bindtouchmove="moveEvent"
-          bindtouchend="endEvent">
-        <image class="puppy" src="resources/puppy.png"/>
-        </movable-view>
-        <image class="cushion9" src="resources/cushion.png"/>
-      </view>
-      <view class="kennelBox">
-        <image class="cushion9" src="resources/cushion.png"/>
-      </view>
-      <view class="kennelBox">
-        <image class="cushion9" src="resources/cushion.png"/>
-      </view>
-      <view class="kennelBox">
-        <movable-view direction="all" 
-          id="7"
-          x="22.5"
-          y='282'
-          style="width:160rpx; height:203rpx;"
-          bindtouchstart="startEvent"
-          bindtouchmove="moveEvent"
-          bindtouchend="endEvent">
-        <image class="puppy" src="resources/puppy.png"/>
-        </movable-view>
-        <image class="cushion9" src="resources/cushion.png"/>
-      </view>
-      <view class="kennelBox">
-        <image class="cushion9" src="resources/cushion.png"/>
-      </view>
-      <view class="kennelBox">
+          </view>
+        
         <image class="cushion9" src="resources/cushion.png"/>
       </view>
     </movable-area>

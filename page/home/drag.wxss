@@ -98,8 +98,8 @@
 .headGold {
   height:47rpx;
   width:48rpx;
-  position: absolute;
-  top: -10rpx;
+  position: relative;
+  margin-bottom: 170rpx;
 }
 .puppy{
   width:160rpx;
@@ -109,7 +109,6 @@
 .cushion9 {
   width: 175rpx;
   height: 54rpx;
-  margin-bottom: 10rpx;
 }
 
 /**

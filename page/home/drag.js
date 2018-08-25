@@ -6,7 +6,19 @@ Page({
    */
   data: {
     movewidth:0,
-    moveheight:0
+    moveheight:0,
+    ratio:2,
+    puppyData: [
+      { id: 0 ,column: 1, row: 1, level:1, show:'block' },
+      { id: 1, column: 2, row: 1, level:1, show:'block' },
+      { id: 2, column: 3, row: 1, level:1, show:'none' },
+      { id: 3, column: 1, row: 2, level:1, show:'block' },
+      { id: 4, column: 2, row: 2, level:1, show:'block' },
+      { id: 5, column: 3, row: 2, level:1, show:'block' },
+      { id: 6, column: 1, row: 3, level:1, show:'block' },
+      { id: 7, column: 2, row: 3, level:1, show:'block' },
+      { id: 8, column: 3, row: 3, level:1, show:'block' },
+    ],
   },
 
   /**
@@ -18,6 +30,7 @@ Page({
       success: function (res) {
         console.log(res.windowWidth);
         _this.setData({
+          ratio: 750/res.windowWidth,
           moveheight: res.windowHeight,
           movewidth: res.windowWidth,
         });
@@ -36,6 +49,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    console.log(3);
   
   },
 
@@ -79,7 +93,46 @@ Page({
   moveEvent: function (e) { console.log(e.touches[0].pageX +'...'+ e.touches[0].pageY);
   },
   endEvent: function (e) {
-    console.log(e.changedTouches[0].clientX + '.......' + e.changedTouches[0].clientY);
-    console.log(e);
+    //结束时，鼠标所在位置。
+    const clientX = e.changedTouches[0].clientX;
+    const clientY = e.changedTouches[0].clientY;
+    //所捕获id值
+    const currentTargetId = e.currentTarget.id;
+    const perwidth = this.data.movewidth/3;
+    const colNum = parseInt(clientX/perwidth) + 1;
+    const perHeight = 789/this.data.ratio/3;
+    const rowNum = parseInt(clientY/perHeight);
+    // 计算目标ID值
+    const resultID = (rowNum-1)*3+colNum -1;
+    console.log(rowNum,colNum,resultID);
+    const tempData = this.data.puppyData;
+    const resultItem = this.data.puppyData.filter((item)=> item.id==resultID)[0];
+    const arr = tempData.map(item =>{
+      if (item.id == currentTargetId){
+        return { ...item, row: resultItem.row, column: resultItem.column};
+      }
+      return {...item};
+
+      
+    })
+    const arr2 = tempData.map(item => {
+      if (item.id == currentTargetId) {
+        return { ...item, show: 'none' };
+      }
+      return { ...item };
+
+
+    })
+    console.log(1);
+    this.setData({
+        puppyData:arr
+    });
+    console.log(2)
+    setTimeout(()=>{
+      this.setData({
+        puppyData: arr2
+      });
+    }, 200)
+    
   }
 })
