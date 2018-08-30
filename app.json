@@ -1,6 +1,9 @@
 {
   "pages": [
     "page/home/index",
+    "page/home/dogShop/dogShop",
+
+
     "page/component/index",
 
     "page/component/pages/view/view",
