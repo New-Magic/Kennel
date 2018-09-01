@@ -1,0 +1,61 @@
+<view class="container">
+  <view class="box" style="background:url(./resources/outline.png) 100%/100% no-repeat">
+    <view class="header">
+      <image src="./resources/title.png" class="title"/>
+      <image src="./resources/dogbook.png" class="dogbook" />
+    </view>
+    <view class="listBox" style="background:url(./resources/inline.png) 100%/100% no-repeat">
+      <view 
+        class="dogBox mr14" 
+        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
+      >
+        <image src="./resources/puppy.png" class="puppy"/>
+      </view>
+      <view 
+        class="dogBox" 
+        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
+      >
+        <image src="./resources/puppy.png" class="puppy"/>
+      </view>
+      <view 
+        class="dogBox mr14" 
+        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
+      >
+        <image src="./resources/puppy.png" class="puppy"/>
+      </view>
+      <view 
+        class="dogBox" 
+        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
+      >
+        <image src="./resources/puppy.png" class="puppy"/>
+      </view>
+      <view 
+        class="dogBox mr14" 
+        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
+      >
+        <image src="./resources/puppy.png" class="puppy"/>
+      </view>
+      <view 
+        class="dogBox" 
+        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
+      >
+        <image src="./resources/puppy.png" class="puppy"/>
+      </view>
+    </view>
+    <view class="bottom">
+      <view>
+        <image src="./resources/leftrow.png" class="row" />
+      </view>
+      <view
+        class="closeback"
+        style="background:url(./resources/closeback.png) 100%/100% no-repeat"
+      >
+        <image src="./resources/close.png" class="close"/>
+      </view>
+      <view>
+        <image src="./resources/rightrow.png" class="row" />        
+      </view>
+    </view>
+  </view>
+  
+</view>
