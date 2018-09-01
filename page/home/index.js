@@ -3,7 +3,9 @@ Page({
      * 页面的初始数据
      */
   data: {
-    dogGenCount:0,
+    kennelshadow:0,
+    dogGenCount: 0,//生成狗点击次数
+    dogGenLevel: 1,//生成狗等级（最高5级）
     movewidth: 0,
     moveheight: 0,
     ratio: 2,
@@ -134,20 +136,25 @@ Page({
     });
   },
   onDogShop: () => wx.navigateTo({ url: './dogShop/dogShop' }),
+  onDictionary:function() {
+    wx.navigateTo({ url: '../Illustrations/index' });
+  },
   onDogGenerate: function() {
     let tempTapCount = 0; 
+    const perShadow = 166;
     const tempData = this.data.puppyData;
     if(this.data.dogGenCount != 9 ){
       tempTapCount = this.data.dogGenCount+1;
       this.setData({
         dogGenCount: tempTapCount,
+        kennelshadow: tempTapCount*perShadow/10,
       });
     }else{
       let isFirst = true;
       const tempArr = tempData.map((item) =>{
         if (item.show == 'none' && isFirst) {
           isFirst = false;
-         return { ...item, show: 'block' };
+         return { ...item, show: 'block', level:this.data.dogGenLevel };
         } else {
           return{ ...item };
         }
@@ -155,7 +162,17 @@ Page({
       this.setData({
         dogGenCount: tempTapCount,
         puppyData: tempArr,
+        kennelshadow:0,
       });
     }    
+  },
+  onKennelUpgrade: function(){
+    let tempLevel = this.data.dogGenLevel+1;
+    if(tempLevel > 2){
+      tempLevel =2;
+    }
+    this.setData({
+      dogGenLevel:tempLevel
+    })
   }
 })

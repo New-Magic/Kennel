@@ -148,9 +148,19 @@
   width: 74rpx;
   height: 34rpx;
 }
-.opraIcon2{  
+.opraIcon2{
+  position: absolute;
+  z-index: 2;
   width:174rpx;
   height:166rpx;
+}
+.opraIcon3{  
+  z-index:3;
+  position: absolute;
+  background-color: grey;
+  bottom: 10rpx;
+  opacity: 0.3;
+  width:174rpx;
 }
 .upgrade{
   display: flex;
@@ -169,6 +179,5 @@
   width: 202rpx;
   height: 192rpx;
   align-items: center;
-  /* margin-bottom: 50rpx; */
 }
 
