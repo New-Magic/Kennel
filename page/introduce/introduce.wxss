@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 661rpx;
+  height: 920rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  width: 221rpx;
+  height: 50rpx;
+  margin-right: 30rpx;
+}
+.dogbook {
+  width: 98rpx;
+  height: 96rpx;
+}
+.photo {
+  width: 83rpx;
+  height: 56rpx;
+}
+
+.listBox {
+  width: 618rpx;
+  height: 632rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dog {
+  width: 154rpx;
+  height: 206rpx;
+}
+.dogContainer {
+  margin-top: 80rpx;
+}
+.describe {
+  margin-top: 150rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.infoStyle {
+  color: #722800;
+  font-size: 32.5rpx;
+  font-weight: bold;
+}
+.nameStyle {
+  color: #722800;
+  font-size: 45.5rpx;
+  font-weight: bold;
+}
+.imageContainer {
+  display: flex;
+  align-items: center;
+}
+.header {
+  width: 578rpx;
+  padding: 20rpx 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dogBox {
+  width: 280rpx;
+  height: 180rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mr14 {
+  margin-right: 14rpx;
+}
+.puppy {
+  width: 95rpx;
+  height: 130rpx;
+}
+.bottom {
+  flex: 1;
+  width: 618rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.row {
+  width: 95rpx;
+  height: 61rpx;
+}
+.closeback {
+  width: 179rpx;
+  height: 66rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  width: 78rpx;
+  height: 34rpx;
+}

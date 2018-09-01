@@ -1,7 +1,9 @@
 {
   "pages": [
-    "page/home/index",
-    "page/component/index",
+    "page/component/index",    
+    "page/Illustrations/index",    
+    "page/home/index",    
+    "page/introduce/introduce",
 
     "page/component/pages/view/view",
     "page/component/pages/scroll-view/scroll-view",
