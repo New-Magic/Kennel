@@ -42,7 +42,7 @@
       <image class="opraIcon" src="resources/dictionary.png"/>
       <image class="opraIcon1" src="resources/dictionaryFont.png"/>
     </view>
-    <view class="button" bindtap="onDogShop">
+    <view class="button">
       <image class="opraIcon" src="resources/dogShop.png"/>
       <image class="opraIcon1" src="resources/shopping.png"/>
     </view>

@@ -1,0 +1,18 @@
+<view class="store-box" style="background: url(./resources/orangeBc.png) no-repeat center/100%;">
+  <view class="header">
+    <view class="title">
+      <text>狗狗商店</text>
+    </view>
+    <image src='./resources/gift.png' class="gift-img" />
+    <view class="gift" style="background: url(./resources/giftBc.png) no-repeat center/100%;">
+      <text>惊喜礼物</text>
+    </view>
+  </view>
+  <view class="list" style="background: url(./resources/whiteBc.png) no-repeat center/100%;">
+  </view>
+  <view class="btn">
+    <view style="background: url(./resources/btnBc.png) no-repeat center/100%;" class="btnImg">
+      <text>返回</text>
+    </view>
+  </view>
+</view>
