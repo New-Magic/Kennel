@@ -1,15 +1,15 @@
-<!-- <view class="store-box" style="background: url(./resources/orangeBc.png) no-repeat center/100%;">
-  <view class="header">
-    <view class="title">
-      <text>狗狗商店</text>
+<view class="container">
+  <view class="box" style="background:url(./resources/outline.png) no-repeat top left/100% 100% content-box">
+    <view class="header">
+      <image src='./resources/gift.png' class="gift-img" />
+      <image src="./resources/狗狗商店.png" class="title"/>
+      <view class="giftBox" style="background:url(./resources/giftBc.png) 100%/100% no-repeat">
+        <image src="./resources/惊喜礼物.png" class="gift" />
+      </view>
     </view>
-    <image src='./resources/gift.png' class="gift-img" />
-    <view class="gift" style="background: url(./resources/giftBc.png) no-repeat center/100%;">
-      <text>惊喜礼物</text>
-    </view>
-  </view>
-  <view class="list" style="background: url(./resources/whiteBc.png) no-repeat center/100%;">
-      <scroll-view class="scroll" scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
+    <view class="listBox" style="background:url(./resources/inline.png) no-repeat top left/100% 100% content-box">
+      <view class="innerBox">
+        <scroll-view class="scroll" scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
          bindscrolltolower="bindDownLoad" bindscroll="scroll" bindscrolltoupper="refresh"> 
         <view class="list_item" wx:for="{{list}}"> 
           <image class="list_img" src="./resources/brown_dog.png"></image> 
@@ -24,73 +24,16 @@
         <loading hidden="{{hidden}}" bindchange="loadingChange"> 
           加载中... 
         </loading> 
-      </view>   
-  </view>
-  <view class="btn">
-    <view style="background: url(./resources/btnBc.png) no-repeat center/100%;" class="btnImg">
-      <text>返回</text>
-    </view>
-  </view>
-</view> -->
-
-<view class="container">
-  <view class="box" style="background:url(./resources/outline.png) 100%/100% no-repeat">
-    <view class="header">
-      <image src="./resources/title.png" class="title"/>
-      <image src="./resources/dogbook.png" class="dogbook" />
-    </view>
-    <view class="listBox" style="background:url(./resources/inline.png) 100%/100% no-repeat">
-      <view 
-        class="dogBox mr14" 
-        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
-      >
-        <image src="./resources/puppy.png" class="puppy"/>
-      </view>
-      <view 
-        class="dogBox" 
-        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
-      >
-        <image src="./resources/puppy.png" class="puppy"/>
-      </view>
-      <view 
-        class="dogBox mr14" 
-        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
-      >
-        <image src="./resources/puppy.png" class="puppy"/>
-      </view>
-      <view 
-        class="dogBox" 
-        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
-      >
-        <image src="./resources/puppy.png" class="puppy"/>
-      </view>
-      <view 
-        class="dogBox mr14" 
-        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
-      >
-        <image src="./resources/puppy.png" class="puppy"/>
-      </view>
-      <view 
-        class="dogBox" 
-        style="background:url(./resources/dogback.png) 100%/100% no-repeat"
-      >
-        <image src="./resources/puppy.png" class="puppy"/>
+      </view>  
       </view>
     </view>
     <view class="bottom">
-      <view>
-        <image src="./resources/leftrow.png" class="row" />
-      </view>
       <view
         class="closeback"
         style="background:url(./resources/closeback.png) 100%/100% no-repeat"
       >
-        <image src="./resources/close.png" class="close"/>
-      </view>
-      <view>
-        <image src="./resources/rightrow.png" class="row" />        
+        <image src="./resources/返回.png" class="close"/>
       </view>
     </view>
   </view>
-  
 </view>

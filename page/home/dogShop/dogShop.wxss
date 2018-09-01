@@ -1,50 +1,3 @@
-/* .store-box {
-  display:flex;
-  flex:1;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-}
-
-.header {
-  display: flex;
-  flex: 1;
-  height: 20%;
-}
-
-.bcImg {
-  width: 100%;
-  height: 100%;
-}
-
-.title {
-  float:left;
-  font-size:50rpx;
-  margin:20rpx 50rpx;
-  text-align:center;
-  font-weight: bold;
-}
-
-.gift-img {
-  width:120rpx;
-  height:128rpx;
-  float:left;
-  position:relative;
-  top:-20rpx;
-}
-
-.gift {
-  float:left;
-  width:100px;
-  height:40px;
-  margin:10px;
-  margin-left:15px;
-  font-size:20px;
-  text-align:center;
-  line-height:40px;
-  font-weight: bold;
-}
-
 .list {
   display:flex;
   flex:1;
@@ -53,21 +6,6 @@
   width:90%;
   height:70%;
   overflow:hidden;
-}
-
-.btn {
-  float:left;
-  width:100%;
-  text-align: center;
-}
-
-.btnImg {
-  width: 200rpx;
-  height: 80rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }
 
 .list_container{ 
@@ -125,7 +63,16 @@
 
 .list_text{ 
   font-size: 30rpx; 
-}  */
+} 
+
+.gift-img {
+  width:120rpx;
+  height:128rpx;
+  position: absolute;
+  top: -20rpx;
+  right: 210rpx;
+}
+
 .container {
   display: flex;
   flex: 1;
@@ -134,28 +81,37 @@
 }
 .box {
   width: 661rpx;
-  height: 920rpx;
+  height: 1061rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .title {
   width: 221rpx;
   height: 50rpx;
   margin-right: 30rpx;
 }
+
 .dogbook {
   width: 98rpx;
   height: 96rpx;
 }
 
 .listBox {
-  width: 618rpx;
-  height: 632rpx;
+  width: 582rpx;
+  height: 777rpx;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.innerBox {
+  width: 582rpx; 
+  height: 757rpx; 
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -163,7 +119,11 @@
   padding: 20rpx 20rpx;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 40rpx;
 }
+
 .dogBox {
   width: 280rpx;
   height: 180rpx;
@@ -171,13 +131,16 @@
   justify-content: center;
   align-items: center;
 }
+
 .mr14 {
   margin-right: 14rpx;
 }
+
 .puppy {
   width: 95rpx;
   height: 130rpx;
 }
+
 .bottom {
   flex: 1;
   width: 618rpx;
@@ -185,10 +148,12 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .row {
   width: 95rpx;
   height: 61rpx;
 }
+
 .closeback {
   width: 179rpx;
   height: 66rpx;
@@ -196,7 +161,21 @@
   justify-content: center;
   align-items: center;
 }
+
 .close {
-  width: 78rpx;
+  width: 87rpx;
+  height: 33rpx;
+}
+
+.gift {
+  width: 142rpx;
   height: 34rpx;
+}
+
+.giftBox {
+  width: 179rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
