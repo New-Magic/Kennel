@@ -38,7 +38,7 @@
       <image class="opraIcon" src="resources/double.png"/>
       <image class="opraIcon1" src="resources/doubleFont.png"/>
     </view>
-    <view class="button">
+    <view class="button" bindtap='onDictionary'>
       <image class="opraIcon" src="resources/dictionary.png"/>
       <image class="opraIcon1" src="resources/dictionaryFont.png"/>
     </view>
@@ -46,12 +46,13 @@
       <image class="opraIcon" src="resources/dogShop.png"/>
       <image class="opraIcon1" src="resources/shopping.png"/>
     </view>
-    <view class="upgrade">
+    <view class="upgrade" bindtap="onKennelUpgrade">
       <image class="upgradeIcon" src="resources/upgrade.png"/>
     </view>
     <view class="house" bindtap="onDogGenerate">
       <view class="buildButton" style="background:url(./resources/kennelShadow.png) 100%/100% no-repeat ">
         <image class="opraIcon2" src="resources/kennel.png"/>
+        <view class="opraIcon3" style="height:{{kennelshadow}}rpx" />
     </view>
     </view>
   </view>
