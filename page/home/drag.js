@@ -9,15 +9,15 @@ Page({
     moveheight:0,
     ratio:2,
     puppyData: [
-      { id: 0 ,column: 1, row: 1, level:1, show:'block' },
-      { id: 1, column: 2, row: 1, level:1, show:'block' },
-      { id: 2, column: 3, row: 1, level:1, show:'none' },
-      { id: 3, column: 1, row: 2, level:1, show:'block' },
-      { id: 4, column: 2, row: 2, level:1, show:'block' },
-      { id: 5, column: 3, row: 2, level:1, show:'block' },
-      { id: 6, column: 1, row: 3, level:1, show:'block' },
-      { id: 7, column: 2, row: 3, level:1, show:'block' },
-      { id: 8, column: 3, row: 3, level:1, show:'block' },
+      { id: 0 ,column: 1, row: 1, level:1, show:'block', res:"puppy2.png" },
+      { id: 1, column: 2, row: 1, level: 1, show: 'block', res: "puppy3.png" },
+      { id: 2, column: 3, row: 1, level: 1, show: 'none', res: "puppy1.png" },
+      { id: 3, column: 1, row: 2, level: 1, show: 'block', res: "puppy1.png" },
+      { id: 4, column: 2, row: 2, level: 1, show: 'block', res: "puppy1.png" },
+      { id: 5, column: 3, row: 2, level: 1, show: 'block', res: "puppy1.png"},
+      { id: 6, column: 1, row: 3, level: 1, show: 'block', res: "puppy1.png" },
+      { id: 7, column: 2, row: 3, level: 1, show: 'block', res: "puppy1.png" },
+      { id: 8, column: 3, row: 3, level: 1, show: 'block', res: "puppy1.png"},
     ],
   },
 
@@ -106,24 +106,26 @@ Page({
     const resultID = (rowNum-1)*3+colNum -1;
     console.log(rowNum,colNum,resultID);
     const tempData = this.data.puppyData;
+    const currentItem = this.data.puppyData.filter((item) => item.id == currentTargetId)[0];
     const resultItem = this.data.puppyData.filter((item)=> item.id==resultID)[0];
     const arr = tempData.map(item =>{
-      if (item.id == currentTargetId){
-        return { ...item, row: resultItem.row, column: resultItem.column};
-      }
-      return {...item};
-
-      
+      if(currentItem.level == resultItem.level){
+        if (item.id == currentTargetId) {
+          return { ...item, row: resultItem.row, column: resultItem.column };
+        } else if (item.id == resultID) {
+          return { ...item, level: resultItem.level + 1 }
+        }
+      }     
+      return {...item};      
     })
-    const arr2 = tempData.map(item => {
-      if (item.id == currentTargetId) {
-        return { ...item, show: 'none' };
+    const arr2 = arr.map(item => {
+      if (currentItem.level == resultItem.level) {
+        if (item.id == currentTargetId) {
+          return { ...item, show: 'none' };
+        }
       }
       return { ...item };
-
-
     })
-    console.log(1);
     this.setData({
         puppyData:arr
     });

@@ -25,10 +25,7 @@
           bindtouchstart="startEvent"
           bindtouchmove="moveEvent"
           bindtouchend="endEvent">
-          
-            <image class="puppy" src="resources/puppy.png" />
-        <text>{{item.level}}</text>
-        
+          <image class="puppy" src="resources/puppy{{item.level}}.png" />        
         </movable-view>
           </view>
         
