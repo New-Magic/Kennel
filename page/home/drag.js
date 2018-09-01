@@ -134,5 +134,7 @@ Page({
       });
     }, 200)
     
-  }
+  },
+
+  onDogShop: () => wx.navigateTo({ url: './dogShop/dogShop' })
 })

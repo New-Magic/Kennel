@@ -1,12 +1,15 @@
-.store-box {
-  width:90%;
-  height:90%;
-  margin:5%;
-  display: block;
+/* .store-box {
+  display:flex;
+  flex:1;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
 }
 
 .header {
-  float: left;
+  display: flex;
+  flex: 1;
+  height: 20%;
 }
 
 .bcImg {
@@ -43,19 +46,157 @@
 }
 
 .list {
-  width:80%;
+  display:flex;
+  flex:1;
+  justify-content:center;
+  align-items:center;
+  width:90%;
   height:70%;
-  float:left;
-  margin: 5% 10%;
+  overflow:hidden;
 }
 
 .btn {
   float:left;
-  text-align:center;
   width:100%;
+  text-align: center;
 }
 
 .btnImg {
   width: 200rpx;
   height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.list_container{ 
+  height: 100%; 
+  position: relative;
+  padding: 20rpx; 
+} 
+
+.scroll {
+  display:flex;
+  padding:20rpx;
+}
+ 
+.list_item{ 
+  display: flex; 
+  margin-bottom: 50rpx; 
+  width:100%; 
+  background:#f0f0f0; 
+  overflow:hidden; 
+  align-items: center;
+  border-radius: 10%;
+} 
+ 
+.list_img{ 
+  height: 150rpx; 
+  width: 120rpx; 
+  margin: 20rpx;
+} 
+
+.list_img1{
+  width:50rpx;
+  height:50rpx;
+  display:inline-block;
+  overflow:hidden;
+
+}
+ 
+.list_description{ 
+  display:flex;
+  flex-grow:1;
+  padding:10rpx;
+  font-size:50rpx;
+  align-items:center;
+  justify-content:space-around;
+  margin-right:15rpx;
+} 
+ 
+.list_title{ 
+  font-size:40rpx;
+  font-weight: bold;
+  width:180rpx;
+  margin:10rpx;
+  text-align:center;
+} 
+
+.list_text{ 
+  font-size: 30rpx; 
+}  */
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 661rpx;
+  height: 920rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  width: 221rpx;
+  height: 50rpx;
+  margin-right: 30rpx;
+}
+.dogbook {
+  width: 98rpx;
+  height: 96rpx;
+}
+
+.listBox {
+  width: 618rpx;
+  height: 632rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 578rpx;
+  padding: 20rpx 20rpx;
+  display: flex;
+  align-items: center;
+}
+.dogBox {
+  width: 280rpx;
+  height: 180rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mr14 {
+  margin-right: 14rpx;
+}
+.puppy {
+  width: 95rpx;
+  height: 130rpx;
+}
+.bottom {
+  flex: 1;
+  width: 618rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.row {
+  width: 95rpx;
+  height: 61rpx;
+}
+.closeback {
+  width: 179rpx;
+  height: 66rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  width: 78rpx;
+  height: 34rpx;
 }

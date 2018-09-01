@@ -1,8 +1,9 @@
 {
   "pages": [
+    "page/home/dogShop/dogShop",
     "page/home/drag",
     "page/home/index",
-    "page/home/dogShop/dogShop",
+    
 
 
     "page/component/index",
