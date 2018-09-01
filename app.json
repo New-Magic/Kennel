@@ -1,11 +1,11 @@
 {
   "pages": [
+    "page/home/dogShop/dogShop",
+    "page/home/drag",
     "page/home/index",
-    "page/component/index",    
+    "page/component/index",
     "page/Illustrations/index",    
     "page/introduce/introduce",
-    "page/home/drag",  
-    "page/home/dogShop/dogShop",
     "page/component/pages/view/view",
     "page/component/pages/scroll-view/scroll-view",
     "page/component/pages/swiper/swiper",
