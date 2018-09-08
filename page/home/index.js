@@ -7,6 +7,11 @@ Page({
     dogGenCount: 0,//生成狗点击次数
     dogGenLevel: 1,//生成狗等级（最高5级）
     movewidth: 0,
+    modalTitle:'',//modal title
+    modalConText:'OK',//modalconfirm 文字
+    hiddenCancel:true,//modal隐藏cancle 
+    hiddenmodalput: true,//是否隐藏modal
+    modalImage:'generateSuccess',//modal暂时图片
     moveheight: 0,
     ratio: 2,
     puppyData: [
@@ -50,8 +55,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log(3);
-
   },
 
   /**
@@ -106,6 +109,7 @@ Page({
     const rowNum = parseInt(clientY / perHeight);
     // 计算目标ID值
     const resultID = (rowNum - 1) * 3 + colNum - 1;
+    let temphideModal = true;
     console.log(rowNum, colNum, resultID);
     const tempData = this.data.puppyData;
     const currentItem = this.data.puppyData.filter((item) => item.id == currentTargetId)[0];
@@ -117,6 +121,7 @@ Page({
             if (item.id == currentTargetId) {
               return { ...item, show: 'none' };
             } else if (item.id == resultID) {
+              temphideModal = false;
               return { ...item, level: resultItem.level + 1 }
             }
           }
@@ -132,7 +137,11 @@ Page({
       return { ...item };
     })
     this.setData({
-      puppyData: arr
+      puppyData: arr,
+      hiddenmodalput: temphideModal,
+      modalTitle: '',
+      modalImage: 'generateSuccess',
+      modalConText: 'OK'
     });
   },
   onDogShop: () => wx.navigateTo({ url: './dogShop/dogShop' }),
@@ -172,7 +181,23 @@ Page({
       tempLevel =2;
     }
     this.setData({
-      dogGenLevel:tempLevel
+      dogGenLevel:tempLevel,
+      modalTitle: '狗窝升级',
+      hiddenmodalput:false,
+      modalImage:'upgradeKennel',
+      modalConText:'关闭'
     })
-  }
+  },
+  //取消按钮  
+  cancel: function () {
+    this.setData({
+      hiddenmodalput: true
+    });
+  },
+  //确认  
+  confirm: function () {
+    this.setData({
+      hiddenmodalput: true
+    })
+  }  
 })

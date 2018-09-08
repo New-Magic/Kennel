@@ -54,6 +54,18 @@
         <image class="opraIcon2" src="resources/kennel.png"/>
         <view class="opraIcon3" style="height:{{kennelshadow}}rpx" />
     </view>
+    <modal 
+      hidden="{{hiddenmodalput}}" 
+      title="{{modalTitle}}" 
+      confirm-text="{{modalConText}}"         
+      bindconfirm="confirm"
+      no-cancel="{{hiddenCancel}}">  
+      <view>
+
+       <image class="{{modalImage}}" src="resources/{{modalImage}}.png" mode="scaleToFill" />
+        
+      </view> 
+    </modal>  
     </view>
   </view>
 </view>

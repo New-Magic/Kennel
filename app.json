@@ -1,9 +1,11 @@
 {
   "pages": [
     "page/home/index",
+        "page/API/index",
+        "page/component/index",
     "page/home/dogShop/dogShop",
     "page/home/drag",
-    "page/component/index",
+
     "page/Illustrations/index",    
     "page/introduce/introduce",
     "page/component/pages/view/view",
@@ -30,7 +32,6 @@
     "page/component/pages/video/video",
     "page/component/pages/map/map",
     "page/component/pages/canvas/canvas",
-    "page/API/index",
     "page/API/pages/login/login",
     "page/API/pages/get-user-info/get-user-info",
     "page/API/pages/request-payment/request-payment",
