@@ -92,10 +92,9 @@ Page({
 
   },
   startEvent: function (e) {
-    console.log("startTouch" + e);
   },
   moveEvent: function (e) {
-    console.log(e.touches[0].pageX + '...' + e.touches[0].pageY);
+  
   },
   endEvent: function (e) {
     //结束时，鼠标所在位置。
